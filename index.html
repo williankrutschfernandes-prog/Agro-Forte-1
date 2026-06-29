@@ -1,21 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Página do Agrinho</title>
+    <title>Blog da Ale</title>
 </head>
+
 <body>
     <header>
- <div class="container"><img src="apenas-um-show5.jpg"  alt="arbusto com rigby e mordecai" ></div>
- <h1>A agricultura e o meio ambiente  </h1>
- </header>
-     <div class="container"><img src="2d79d5578133ecb1b0cf8fc177de2015.jpg"  alt="mordecai e rigby de óculos" ></div>
- <h1>Só falta um trimestre </h1>
- <h2>E a gente está como?</h2>
- <h1>Sedentos pelo saber  </h1>
- <div class="container"><img src="5b2df0a83ebcb2cbc82cf043af6b3ab7.jpg"  alt="rigby e mordecai no parque" ></div>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+        <button>❤️<span>0</span></button>
+        <style>
+            header {
+                background-color: #183C63;
+                color: #FFFFFF;
+                text-align: center;
+                max-width: 800px;
+                margin: 0 auto;
+            }
 
+            main {
+                background-color: #e1e79e;
+                color: #081e35e6;
+                display: flex;
+            }
+
+            div p {
+font-weight: bold;
+}
+
+.artigo-autor {
+font-weight: bold;
+}
+        </style>
+    </header>
+    <main>
+        <img src="imagem-blog.png"
+            alt="logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
+     <div class="artigo-autor">
+            <h2>Meu primeiro post</h2>
+        <p>Por: Alexandra</p>
+        <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
+            tecnologia.</p></div>
+    </main>
+    <script>
+        const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+function botaoClicado() {
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
+</script>
 </body>
 </html>
